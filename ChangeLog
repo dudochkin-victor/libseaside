@@ -1,0 +1,80 @@
+Changes in 0.0.39
+
+24772 Fix some Favorite related issues from the merge with the async branch
+43759 - 1803c Large refactoring os SeasideSyncModel, convert sync calls to
+async Robin Burchell <viroteck at viroteck.net>
+1a843 Remove SeasideListModel - this is no longer in use Kaitlin Rupert
+<kaitlin.rupert@intel.com>
+73521 BMC#14196: Use QContactFavorite Robin Burchell <viroteck at
+viroteck.net>
+
+Changes in 0.0.38
+
+b3e8 BMC#8426: Integrating build_against_new-qt-mobility.patch upstream Signed-off-by: Connie Berardi <connie.berardi@intel.com>
+dca3 Reverting company field to use qtcontacts-tracker API instead of QSettings BMC#6996, 7801 Signed-off-by: Connie Berardi <connie.berardi@intel.com>
+9c77 Ensuring that a MeCard is always evaluated to be less than any other Contact in proxy model. Fix for BMC#6007 Contacts crashes when saving a contact with high possibility. Ensure proxy model and list are aligned in sort order. Signed-off-by: Connie Berardi <connie.berardi@intel.com>
+
+Changes in 0.0.37
+
+b9b2... Restoring deprecated function getLocalSelfId() Signed-off-by: Connie Berardi <connie.berardi@intel.com>
+
+Changes in 0.0.36
+
+0fb7... BMC# 6009 Unable to save contact as favorite -Fixed BMC# 6045 People Application fails to launch in new image -Fixed BMC# 7516 Two MeCards appear in Tracker -Fixed Signed-off-by: Connie Berardi <connie.berardi@intel.com>
+
+Changes in 0.0.35
+
+
+Changes in 0.0.34
+
+2c11... Checking in patch from Shane Bryan for .gitignore Signed-off-by: Connie Berardi <connie.berardi@intel.com>
+5b05... Correcting Changelog bug #3067 to 3068 for commit  bf246c2793c31645e39be686915be468946a09a1 Signed-off-by: Connie Berardi <connie.berardi@intel.com>
+a570... Adding CellCreator for each type of application that could use SeasideList. Exposing API for the Photo application. FEA#3028 Signed-off-by: Connie Berardi <connie.berardi@intel.com>
+69c2... Updated ChangeLog and libseaside.pro to version 0.0.33
+9681... Exposing function to map QContactLocalId to model index for dbus interface that allows IM App to launch details view for a given QContactLocalId FEA# 3068 Signed-off-by: Connie Berardi <connie.berardi@intel.com>
+
+Changes in 0.0.33
+
+bf24... Exposing function to map QContactLocalId to model index for dbus interface that allows IM App to launch details view for a given QContactLocalId FEA# 3068 Signed-off-by: Connie Berardi <connie.berardi@intel.com>
+
+Changes in 0.0.32
+
+0f67... Added IM to SeasideSyncModel and Seaside tables to reads/write QContactnOlineAccount from tracker backend to persistently store IM contacts.FEA#4178,4195 Adding more tr() translation strings marked for localization. Signed-off-by: Connie Berardi <connie.berardi@intel.com>
+0e46... Adding MeCard feature, no FEA# available, using qtcontacts-tracker APIs for selfId so that user can store their contact information. Signed-off-by: Connie Berardi <connie.berardi@intel.com>
+cf45... Changing .pro file for test app to install views/theme files Signed-off-by: Connie Berardi <connie.berardi@intel.com>
+
+Changes in 0.0.31
+
+91d0... Adding Seaside::SearchRole to replace default Qt::DisplayRole and correcting usage of Seaside::DataRole Signed-off-by: Connie Berardi <connie.berardi@intel.com>
+bee1... Changing view params for detail edit views in *.conf files Signed-off-by: Connie Berardi <connie.berardi@intel.com>
+
+Changes in 0.0.30
+
+3513... Fixing build errors from class name changes Signed-off-by: Connie Berardi <connie.berardi@intel.com>
+
+Changes in 0.0.29
+
+176d... Removing untracked files, files were replaced by library versions Signed-off-by: Connie Berardi <connie.berardi@intel.com>
+be09... Renamed classes to "Seaside*" to fix with spectacle build error and for consistency. Signed-off-by: Connie Berardi <connie.berardi@intel.com>
+
+Changes in 0.0.28
+
+2ac6... Fixing version number, should be 0.0.27 Signed-off-by: Connie Berardi <connie.berardi@intel.com>
+d0a4... Adding SearchWidget to search for contacts by filtering dynamically on input text string. Also expanded seasidelistitem to have a "thinner" card when specified with mode !=0 without status or detail fields. Signed-off-by: Connie Berardi <connie.berardi@intel.com>
+08fd... Adding feature to launch Detail and Edit views in Seaside list Signed-off-by: Connie Berardi <connie.berardi@intel.com>
+f5e6... Adding sample data patch to generate data for testing Signed-off-by: Connie Berardi <connie.berardi@intel.com>
+
+Changes in 0.0.27
+
+ec9a... Adding pkgconfig changes to .pro files to match qt-beta2 build patches Signed-off-by: Connie Berardi <connie.berardi@intel.com>
+3c77... Extending SeasideListItem and list for IM/SMS/Email/Dialer, localized strings, add "Other" to context list, removed fake data generation, added IM account placeholders Signed-off-by: Connie Berardi <connie.berardi@intel.com>
+6c9a... Reverting Company field to use QSettings until QContactDetails saves to Tracker backend Signed-off-by: Connie Berardi <connie.berardi@intel.com>
+
+Changes in 0.0.26
+
+a8bd... Added i18n support for name and removed redundant name detail save Signed-off-by: Connie Berardi <connie.berardi@intel.com>
+1461... Include lastname field in model isEmpty() check Signed-off-by: Connie Berardi <connie.berardi@intel.com>
+785e... Fixing .pro so chooser test app builds Signed-off-by: Connie Berardi <connie.berardi@intel.com>
+5197... Separated First and Last name Signed-off-by: Connie Berardi <connie.berardi@intel.com>
+
+
